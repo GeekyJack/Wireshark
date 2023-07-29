@@ -44,7 +44,19 @@ win+r cmd ipconfig
 
 tcp.flags.fin == 1 表示发完数据包的包
 
+arp
+
 udp![img](assets/Wireshark小白教程/f072316282067e02d9d500e30d379fd255a2a65b.jpg@690w_!web-note.webp)
+
+SYN：连接请求
+
+ACK：确认
+
+
+
+
+
+
 
 其他筛选条件：
 
@@ -88,7 +100,7 @@ ping 一下
 
 ## 6.TCP连接的3次握手协议 P6 - 00:00
 
-﻿
+ip.addr == 167.179.97.156﻿
 
 ![img](assets/Wireshark小白教程/ed3f8f93e57353998d48172025f701c6dc3fc372.jpg@690w_!web-note.webp)
 
@@ -105,6 +117,12 @@ ping 一下
 ﻿ 
 
 ![img](assets/Wireshark小白教程/559e8567bc7c88aebead2e514bd7e5d37a044716.jpg@1200w_!web-note.webp)
+
+SYN：请求同步
+
+ACK：确认同步
+
+FIN：指结束
 
 这里有些问题，本机应该会先发一次ack
 
